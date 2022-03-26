@@ -10,7 +10,7 @@ Summary:	Zope Configuration Markup Language (ZCML)
 Summary(pl.UTF-8):	Zope Configuration Markup Language (ZCML) - język opisu konfiguracji Zope
 Name:		python-%{module}
 Version:	4.4.0
-Release:	1
+Release:	2
 License:	ZPL v2.1
 Group:		Libraries/Python
 Source0:	https://files.pythonhosted.org/packages/source/z/zope.configuration/zope.configuration-%{version}.tar.gz
