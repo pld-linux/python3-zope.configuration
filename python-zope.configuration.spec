@@ -9,12 +9,12 @@
 Summary:	Zope Configuration Markup Language (ZCML)
 Summary(pl.UTF-8):	Zope Configuration Markup Language (ZCML) - język opisu konfiguracji Zope
 Name:		python-%{module}
-Version:	4.4.0
-Release:	3
+Version:	4.4.1
+Release:	1
 License:	ZPL v2.1
 Group:		Libraries/Python
 Source0:	https://files.pythonhosted.org/packages/source/z/zope.configuration/zope.configuration-%{version}.tar.gz
-# Source0-md5:	4987bd8a1df531ea594cd6bb2fc700ed
+# Source0-md5:	02268ab7c1714813aa6532be017f0540
 URL:		https://www.zope.dev/
 %if %{with python2}
 BuildRequires:	python >= 1:2.7
@@ -137,8 +137,8 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %doc CHANGES.rst COPYRIGHT.txt LICENSE.txt README.rst
 %{py_sitescriptdir}/zope/configuration
-%{py_sitescriptdir}/zope.configuration-*.egg-info
-%{py_sitescriptdir}/zope.configuration-*-nspkg.pth
+%{py_sitescriptdir}/zope.configuration-%{version}-py*.egg-info
+%{py_sitescriptdir}/zope.configuration-%{version}-py*-nspkg.pth
 %endif
 
 %if %{with python3}
@@ -146,8 +146,8 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %doc CHANGES.rst COPYRIGHT.txt LICENSE.txt README.rst
 %{py3_sitescriptdir}/zope/configuration
-%{py3_sitescriptdir}/zope.configuration-*.egg-info
-%{py3_sitescriptdir}/zope.configuration-*-nspkg.pth
+%{py3_sitescriptdir}/zope.configuration-%{version}-py*.egg-info
+%{py3_sitescriptdir}/zope.configuration-%{version}-py*-nspkg.pth
 %endif
 
 %if %{with doc}
